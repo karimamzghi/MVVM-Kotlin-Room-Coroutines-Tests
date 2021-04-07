@@ -1,12 +1,12 @@
-package io.moia.awesometodolist.viewmodel
+package io.kari.todo.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import io.moia.awesometodolist.repository.Todo
-import io.moia.awesometodolist.repository.TodoDatabase
-import io.moia.awesometodolist.repository.TodoRepository
+import io.kari.todo.repository.Todo
+import io.kari.todo.repository.TodoDatabase
+import io.kari.todo.repository.TodoRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking

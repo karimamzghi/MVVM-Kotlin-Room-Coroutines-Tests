@@ -1,4 +1,4 @@
-package io.moia.awesometodolist.ui
+package io.kari.todo.ui
 
 import android.annotation.SuppressLint
 import android.graphics.Paint
@@ -8,12 +8,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import io.moia.awesometodolist.R
-import io.moia.awesometodolist.repository.Todo
+import io.kari.todo.R
+import io.kari.todo.repository.Todo
 import kotlinx.android.synthetic.main.item_todo.view.*
 
 
-class TodoListAdapter(todoItemClickListener: TodoItemClickListener) : ListAdapter<Todo, TodoListAdapter.TodoViewHolder>(TodoItemCallback()) {
+class TodoListAdapter(todoItemClickListener: TodoItemClickListener) : ListAdapter<Todo, TodoListAdapter.TodoViewHolder>(
+    TodoItemCallback()
+) {
 
     private val listener: TodoItemClickListener = todoItemClickListener
 

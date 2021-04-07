@@ -1,4 +1,4 @@
-package io.moia.awesometodolist
+package io.kari.todo
 
 import android.app.Application
 

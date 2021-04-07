@@ -1,12 +1,12 @@
-package io.moia.awesometodolist
+package io.kari.todo
 
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.nhaarman.mockito_kotlin.verify
-import io.moia.awesometodolist.repository.Todo
-import io.moia.awesometodolist.repository.TodoDao
-import io.moia.awesometodolist.repository.TodoRepository
-import io.moia.awesometodolist.viewmodel.MainViewModel
+import io.kari.todo.repository.Todo
+import io.kari.todo.repository.TodoDao
+import io.kari.todo.repository.TodoRepository
+import io.kari.todo.viewmodel.MainViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Assert
 import org.junit.Before

@@ -1,4 +1,4 @@
-package io.moia.awesometodolist.repository
+package io.kari.todo.repository
 
 import androidx.lifecycle.LiveData
 

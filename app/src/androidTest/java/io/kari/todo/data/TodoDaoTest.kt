@@ -1,11 +1,11 @@
-package io.moia.awesometodolist.data
+package io.kari.todo.data
 
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.test.runner.AndroidJUnit4
-import io.moia.awesometodolist.repository.Todo
+import io.kari.todo.repository.Todo
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test

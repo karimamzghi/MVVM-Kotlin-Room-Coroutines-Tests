@@ -1,4 +1,4 @@
-package io.moia.awesometodolist
+package io.kari.todo
 
 import androidx.lifecycle.MutableLiveData
 import androidx.test.espresso.Espresso.onView
@@ -10,9 +10,9 @@ import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.whenever
-import io.moia.awesometodolist.repository.Todo
-import io.moia.awesometodolist.ui.MainActivity
-import io.moia.awesometodolist.viewmodel.MainViewModel
+import io.kari.todo.repository.Todo
+import io.kari.todo.ui.MainActivity
+import io.kari.todo.viewmodel.MainViewModel
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

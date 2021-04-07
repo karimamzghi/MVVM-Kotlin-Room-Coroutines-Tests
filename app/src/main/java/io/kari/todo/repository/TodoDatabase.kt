@@ -1,4 +1,4 @@
-package io.moia.awesometodolist.repository
+package io.kari.todo.repository
 
 import android.content.Context
 import androidx.room.Database
@@ -16,7 +16,8 @@ abstract class TodoDatabase : RoomDatabase() {
     companion object {
         @JvmStatic
         internal fun create(context: Context): TodoDatabase = Room.databaseBuilder(context,
-                TodoDatabase::class.java, DB_NAME).fallbackToDestructiveMigration().build()
+                TodoDatabase::class.java, DB_NAME
+        ).fallbackToDestructiveMigration().build()
     }
 
 }

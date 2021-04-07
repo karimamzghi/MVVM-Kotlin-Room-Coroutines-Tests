@@ -1,12 +1,12 @@
-package io.moia.awesometodolist.ui
+package io.kari.todo.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import io.moia.awesometodolist.R
-import io.moia.awesometodolist.repository.Todo
+import io.kari.todo.R
+import io.kari.todo.repository.Todo
 import kotlinx.android.synthetic.main.activity_add_todo.*
 import java.util.*
 
@@ -22,10 +22,12 @@ class AddTodoActivity : AppCompatActivity() {
 
         val intent = intent
         if (intent != null && intent.hasExtra(KEY_INTENT)) {
-            val item: Todo = intent.getParcelableExtra<Todo>(KEY_INTENT)
+            val item = intent.getParcelableExtra<Todo>(KEY_INTENT)
             this.item = item
 
-            initTodoEditText(item)
+            if (item != null) {
+                initTodoEditText(item)
+            }
         }
 
         updateTitle()
@@ -64,6 +66,7 @@ class AddTodoActivity : AppCompatActivity() {
 
     private fun updateTitle() {
         title = if (item != null) getString(R.string.edit_todo) else getString(R.string.add_todo)
+        tv_add_todo.text = if (item != null) getString(R.string.edit_todo) else getString(R.string.add_todo)
     }
 
     private fun initTodoEditText(item: Todo) {

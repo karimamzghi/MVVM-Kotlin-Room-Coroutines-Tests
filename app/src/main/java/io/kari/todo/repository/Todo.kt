@@ -1,4 +1,4 @@
-package io.moia.awesometodolist.repository
+package io.kari.todo.repository
 
 import android.os.Parcelable
 import androidx.room.Entity

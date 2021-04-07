@@ -1,9 +1,9 @@
-package io.moia.awesometodolist.data
+package io.kari.todo.data
 
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.runner.AndroidJUnit4
-import io.moia.awesometodolist.repository.TodoDatabase
+import io.kari.todo.repository.TodoDatabase
 import org.junit.After
 import org.junit.Before
 import org.junit.runner.RunWith
