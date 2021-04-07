@@ -25,6 +25,8 @@ buildscript {
         material_design = "1.3.0"
         constraint_layout = "2.0.4"
 
+
+
         recycler_view = "1.0.0"
 
         coroutines = "1.4.2"
@@ -32,11 +34,12 @@ buildscript {
         lifecycle_version = "2.3.0"
         arch_persistence = "2.2.6"
         arch_paging = "2.1.2"
+        glide_version = '4.10.0'
 
         // Test dependencies
         junit = "4.12"
         mockito_inline = "+"
-        mockito_kotlin = "+"
+        mockito_kotlin = "3.8.0"
         arch_version = "2.1.0"
         assertj_core = "3.10.0"
 
